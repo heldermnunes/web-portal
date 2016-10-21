@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/form.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -70,13 +71,13 @@
                                     </form>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/addPoi') }}"
+                                    <a href="{{ url('/poi/addPoi') }}"
                                        onclick="event.preventDefault();
                                                  document.getElementById('addPoi-form').submit();">
                                         Add poi
                                     </a>
 
-                                    <form id="addPoi-form" action="{{ url('/addPoi') }}" method="POST" style="display: none;">
+                                    <form id="addPoi-form" action="{{ url('/poi/addPoi') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                                     </form>
                                 </li>
